@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "H8+srygrM/IZCXkVIJqCn4VInK2k+0WCgiZIy9INXWG3kLvZuPKEpzY12Zg3LsLeGGLg+oGNR/ZU41KSFQmVoA==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\Administrador\\Documents\\GitHub\\PII_Phonebook_Start\\src\\TwitterApi\\src\\Program\\Program.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrador\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
