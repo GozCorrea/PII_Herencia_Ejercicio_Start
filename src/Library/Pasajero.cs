@@ -2,17 +2,17 @@ namespace UCURide
 {
     public class Pasajero : Usuario
     {
-       private int calificacionpasajero;
-       private int CantidadCalificaciones = 0;
-       public int CalificacionPasajero
+       private int calificacionp;
+
+       public int Calificacionp
        {
            get
            {
-               return this.calificacionpasajero;
+               return this.calificacionp;
            }
            set
            {
-               this.calificacionpasajero = value;
+               this.calificacionp = value;
            }
        }
 
@@ -20,11 +20,7 @@ namespace UCURide
             : base(nombre, apellido)
         {
         }
-        public void CalificarPasajero(int calificacion)
-        {
-            CantidadCalificaciones ++;
-            CalificacionPasajero = (calificacion + CalificacionPasajero*(CantidadCalificaciones-1))/CantidadCalificaciones;
-        }
+
 
     }
 }
