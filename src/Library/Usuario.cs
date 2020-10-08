@@ -35,6 +35,13 @@ namespace UCURide
             }
         }
 
+        public Usuario (string nombre, string apellido)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+
+        }
+
 
     }
 }
