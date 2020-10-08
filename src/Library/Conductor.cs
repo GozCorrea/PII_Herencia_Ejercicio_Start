@@ -1,6 +1,6 @@
 namespace UCURide
 {
-    public abstract class Conductor : Usuario
+    public class Conductor : Usuario
     {
        private int calificacionc;
 
@@ -45,8 +45,8 @@ namespace UCURide
        }
        
 
-        public Conductor(string nombre) 
-            : base(nombre)
+        public Conductor(string nombre, string apellido) 
+            : base(nombre, apellido)
         {
         }
 
