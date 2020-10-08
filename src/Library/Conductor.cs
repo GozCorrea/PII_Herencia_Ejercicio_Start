@@ -2,15 +2,56 @@ namespace UCURide
 {
     public class Conductor : Usuario
     {
-        public string Vehiculo {get; set;}
-        public string Biografia {get; set;}
-        public Conductor(string vehiculo, string biografia)
+        
+       private int calificacionconductor;
+
+       private string biografia;
+
+       private string vehiculo;
+       
+       private int CantidadCalificaciones = 0;
+       
+       public int CalificacionConductor
+       {
+           get
+           {
+               return this.calificacionconductor;
+           }
+           set
+           {
+               this.calificacionconductor = value;
+           }
+       }
+
+        public string Biografia
+       {
+           get
+           {
+               return this.biografia;
+           }
+           set
+           {
+               this.biografia = value;
+           }
+       }
+       
+              public string Vehiculo
+       {
+           get
+           {
+               return this.vehiculo;
+           }
+           set
+           {
+               this.vehiculo = value;
+           }
+       }
+        public Conductor(string nombre, string apellido)
+        : base(nombre, apellido)
         {
-            this.Biografia = biografia;
-            this.Vehiculo = vehiculo;
         }
-        public int CalificacionConductor;
-        public int CantidadCalificaciones = 0;
+
+
         public void CalificarConductor(int calificacion)
         {
             CantidadCalificaciones ++;

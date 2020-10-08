@@ -1,5 +1,6 @@
 namespace UCURide
 {
+    
     public abstract class Usuario
     {
         private string nombre;
@@ -33,6 +34,13 @@ namespace UCURide
             {
                 return this.foto;
             }
+        }
+
+        public Usuario (string nombre, string apellido)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+
         }
 
 
