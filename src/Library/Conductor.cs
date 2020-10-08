@@ -20,7 +20,7 @@ namespace UCURide
            }
        }
 
-              public string Bigrafia
+              public string Biografia
        {
            get
            {
