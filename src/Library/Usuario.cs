@@ -1,6 +1,5 @@
 namespace UCURide
 {
-    
     public abstract class Usuario
     {
         private string nombre;
