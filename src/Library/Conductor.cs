@@ -2,21 +2,24 @@ namespace UCURide
 {
     public class Conductor : Usuario
     {
-       private int calificacionc;
+        
+       private int calificacionconductor;
 
        private string biografia;
 
        private string vehiculo;
-
-       public int Calificacionc
+       
+       private int CantidadCalificaciones = 0;
+       
+       public int CalificacionConductor
        {
            get
            {
-               return this.calificacionc;
+               return this.calificacionconductor;
            }
            set
            {
-               this.calificacionc = value;
+               this.calificacionconductor = value;
            }
        }
 
@@ -43,13 +46,15 @@ namespace UCURide
                this.vehiculo = value;
            }
        }
-       
-
-        public Conductor(string nombre, string apellido) 
-            : base(nombre, apellido)
+        public Conductor(string nombre, string apellido)
+        : base(nombre, apellido)
         {
         }
 
-
+        public void CalificarConductor(int calificacion)
+        {
+            CantidadCalificaciones ++;
+            CalificacionConductor = (calificacion + CalificacionConductor*(CantidadCalificaciones-1))/CantidadCalificaciones;
+        }
     }
 }
