@@ -48,6 +48,8 @@ namespace UCURide
        }
         public Conductor(string nombre, string apellido)
         : base(nombre, apellido)
+        {
+        }
 
 
         public void CalificarConductor(int calificacion)
