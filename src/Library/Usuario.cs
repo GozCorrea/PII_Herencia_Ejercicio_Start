@@ -23,13 +23,9 @@ namespace UCURide
         public string Cedula
         {
             get
-            {                   
-                return this.cedula; 
-            }
-            set
             {
-                this.cedula = value;
-            }                                                               
+                return this.cedula;
+            }
         }
         public string Foto
         {
@@ -37,16 +33,11 @@ namespace UCURide
             {
                 return this.foto;
             }
-            set
-            {
-                this.foto = value;
-            }     
         }
 
-          public Usuario(string nombre, string apellido)
+          public Usuario(string nombre)
         {
             this.nombre = nombre;
-            this.apellido = apellido;
         }
 
     }

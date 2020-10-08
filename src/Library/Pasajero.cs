@@ -16,8 +16,8 @@ namespace UCURide
            }
        }
 
-        public Pasajero(string nombre, string apellido) 
-            : base(nombre, apellido)
+        public Pasajero(string nombre) 
+            : base(nombre)
         {
         }
 

@@ -16,8 +16,8 @@ namespace UCURide
            }
        }
 
-        public ConductorPool(string nombre, string apellido) 
-            : base(nombre, apellido)
+        public ConductorPool(string nombre) 
+            : base(nombre)
         {
         }
 
