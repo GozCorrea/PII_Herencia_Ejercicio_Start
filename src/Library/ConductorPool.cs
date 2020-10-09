@@ -3,16 +3,16 @@ namespace UCURide
     public class ConductorPool : Conductor
     {  
         
-        private int cantidadpasajeros;
-        public int CantidadPasajeros
+        private int capacidad;
+        public int Capacidad
        {
            get
            {
-               return this.cantidadpasajeros;
+               return this.capacidad;
            }
            set
            {
-               this.cantidadpasajeros = value;
+               this.capacidad = value;
            }
        }
         
