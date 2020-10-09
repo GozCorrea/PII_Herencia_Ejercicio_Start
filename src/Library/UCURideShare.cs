@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System;
 
 // La clase UCURideShare cumple con el patron Singleton porque solo puede existir una instancia de ella.
-// Esto lo hicimos para que la lista de T creada con todos los usuarios del sistema sea única.
+// Esto lo hicimos para que la lista de Usuario creada con todos los usuarios del sistema sea única.
 namespace UCURide
 {
     public class UCURideShare<Usuario>
