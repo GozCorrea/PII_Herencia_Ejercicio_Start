@@ -4,6 +4,7 @@ namespace UCURide
     {
        private int calificacionpasajero;
        private int CantidadCalificaciones = 0;
+       public new string Message {get; set;}
        public int CalificacionPasajero
        {
            get
@@ -15,7 +16,10 @@ namespace UCURide
                this.calificacionpasajero = value;
            }
        }
-
+       public override void Mensaje()
+       {
+           this.Message = $"Nombre: {this.Nombre}";
+       }
         public Pasajero(string nombre, string apellido) 
             : base(nombre, apellido)
         {

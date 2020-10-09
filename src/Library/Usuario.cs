@@ -1,3 +1,5 @@
+// Usuario es la clase base de Conductor y Pasajero. Por ello es que aqui se encuentran todos los atributos
+// compartidos de ambas clases.
 namespace UCURide
 {
     public abstract class Usuario
@@ -34,14 +36,14 @@ namespace UCURide
                 return this.foto;
             }
         }
-
+        public string Message {get;}
         public Usuario (string nombre, string apellido)
         {
             this.nombre = nombre;
             this.apellido = apellido;
-
         }
-
-
+        public virtual void Mensaje()
+        {
+        }
     }
 }
