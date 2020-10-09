@@ -2,11 +2,14 @@ using System;
 using TwitterUCU;
 using System.Collections.Generic;
 
+// La clase Twitter cumple con el patron Singleton porque no pueden crearse instancias nuevas de la clase.
+// Esto lo utilizamos para que, aunque existan muchos objetos UCUrideShare, todos utilizaran la misma instancia
+// de Twitter y no ocuparemos mas memoria de la necesaria guardando diferentes instancias de esta clase.
 namespace UCURide
 {
     public class Twitter
     {
-        private readonly static Twitter _instance = new Twitter();
+        private readonly static Twitter instance = new Twitter();
         private Twitter()
         {
         }
@@ -14,7 +17,7 @@ namespace UCURide
         {
             get
             {
-                return _instance;
+                return instance;
             }
         }
         string consumerKey = "CkovShLMNVCY0STsZlcRUFu99";

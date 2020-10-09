@@ -11,10 +11,11 @@ namespace PII_Herencia
             Pasajero guzman = new Pasajero ("Guzman", "Correa");
             Conductor martin = new Conductor ("Martin", "Perciante");
             ConductorPool nico = new ConductorPool ("Nico", "Lozano", 4);
-            UCURideShare<Usuario> rideShare = new UCURideShare<Usuario> ();
+            UCURideShare<Usuario> rideShare = UCURideShare<Usuario>.Instance;
+            UCURideShare<Usuario> rideShare1 = UCURideShare<Usuario>.Instance;
             rideShare.Add(guzman);
             rideShare.Add(martin);
-            rideShare.Add(nico);
+            rideShare1.Add(nico);
             rideShare.Mostrar();
 
             /*

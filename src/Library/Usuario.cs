@@ -1,3 +1,5 @@
+// Usuario es la clase base de Conductor y Pasajero. Por ello es que aqui se encuentran todos los atributos
+// compartidos de ambas clases.
 namespace UCURide
 {
     public abstract class Usuario
