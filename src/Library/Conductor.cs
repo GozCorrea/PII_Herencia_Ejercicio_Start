@@ -1,6 +1,6 @@
 namespace UCURide
 {
-    public class Conductor : Usuario
+    public class Conductor : Usuario, IUser
     {
         
        private int calificacionconductor;

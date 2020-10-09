@@ -1,6 +1,6 @@
 namespace UCURide
 {
-    public class Pasajero : Usuario
+    public class Pasajero : Usuario, IUser
     {
        private int calificacionpasajero;
        private int CantidadCalificaciones = 0;

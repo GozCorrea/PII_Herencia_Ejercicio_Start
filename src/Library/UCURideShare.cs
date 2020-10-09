@@ -4,13 +4,15 @@ using System;
 
 namespace UCURide
 {
-    public class UCURideShare <Usuario>
+    public class UCURideShare
     {
-        List <Usuario> usuarios = new List<Usuario>();
+        private List <Usuario> usuarios = new List<Usuario>();
 
         public void Add (Usuario usuario)
         {
             usuarios.Add(usuario);
+            
+            
 
         }
 

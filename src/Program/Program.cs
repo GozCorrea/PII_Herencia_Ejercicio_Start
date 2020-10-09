@@ -14,7 +14,7 @@ namespace PII_Herencia
             Conductor martin = new Conductor ("Martin", "Perciante");
             ConductorPool nico = new ConductorPool ("Nico", "Lozano");
 
-            UCURideShare <Usuario> usuarios = new UCURideShare <Usuario> ();
+            UCURideShare usuarios = new UCURideShare ();
             usuarios.Add(guzman);
             usuarios.Add(martin);
             usuarios.Add(nico);

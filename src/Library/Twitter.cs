@@ -3,7 +3,7 @@ using TwitterUCU;
 
 namespace UCURide
 {
-    public class Twitter : IMessageChannel
+    public class Twitter
     {
         string consumerKey = "CkovShLMNVCY0STsZlcRUFu99";
         string consumerKeySecret = "6rc35cHCyqFQSy4vIIjKiCYu31qqkBBkSS5BRlqeYCt5r7zO5B";

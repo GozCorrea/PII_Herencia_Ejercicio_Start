@@ -1,14 +1,14 @@
 using System;
 using TwitterUCU;
-
+using System.Collections.Generic;
 namespace UCURide
 {
-    public class ConductorMensaje : IMessage
+    public class ConductorMensaje : IMessage<T>
     {
-        public ConductorMensaje (string foto, string message, string bio)
+        public void Mensaje (T conductor)
         {
-            this.Foto = foto;
-            this.Message = message;
+            this.Foto = conductor.Foto;
+            this.Message = conductor.Biografia;
         }
         
         public string Foto {get; set;}

@@ -6,10 +6,10 @@ namespace UCURide
     public class PasajeroMensaje : IMessage
     {
         
-        public PasajeroMensaje (string foto, string nombre)
+        public void Mensaje (Pasajero pasajero)
         {
-            this.Foto = foto;
-            this.Message = nombre;
+            this.Foto = pasajero.Foto;
+            this.Message = pasajero.Nombre;
         }
         
         public string Foto {get; set;}
