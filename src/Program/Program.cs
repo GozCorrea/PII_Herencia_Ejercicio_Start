@@ -8,23 +8,15 @@ namespace PII_Herencia
     {
         static void Main(string[] args)
         {
-
-
             Pasajero guzman = new Pasajero ("Guzman", "Correa");
             Conductor martin = new Conductor ("Martin", "Perciante");
-            ConductorPool nico = new ConductorPool ("Nico", "Lozano");
+            ConductorPool nico = new ConductorPool ("Nico", "Lozano", 4);
+            UCURideShare<Usuario> rideShare = new UCURideShare<Usuario> ();
+            rideShare.Add(guzman);
+            rideShare.Add(martin);
+            rideShare.Add(nico);
+            rideShare.Mostrar();
 
-            UCURideShare <Usuario> usuarios = new UCURideShare <Usuario> ();
-            usuarios.Add(guzman);
-            usuarios.Add(martin);
-            usuarios.Add(nico);
-            usuarios.Mostrar();
-
-
-
-
-
-            
             /*
             En éste método deberas mostrar un ejemplo de funcionamiento de tu programa an pseudocódigo. A continuación te 
             planteamos un ejemplo de como hacerlo. Esto no significa que te limites a hacer solamente esto, debes pensar 
@@ -51,7 +43,6 @@ namespace PII_Herencia
 
             rideShare.Add(pasajero3)
             Se publica en Twitter nuevo registro de pasajero!
-
             */
         }
     }

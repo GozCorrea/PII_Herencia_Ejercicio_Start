@@ -1,27 +1,32 @@
 using System;
 using TwitterUCU;
+using System.Collections.Generic;
 
 namespace UCURide
 {
-    public class Twitter : IMessageChannel
+    public class Twitter
     {
+        private readonly static Twitter _instance = new Twitter();
+        private Twitter()
+        {
+        }
+        public static Twitter Instance
+        {
+            get
+            {
+                return _instance;
+            }
+        }
         string consumerKey = "CkovShLMNVCY0STsZlcRUFu99";
         string consumerKeySecret = "6rc35cHCyqFQSy4vIIjKiCYu31qqkBBkSS5BRlqeYCt5r7zO5B";
         string accessTokenSecret = "gNytQjJgLvurJekVU0wmBBkrR1Th40sJmTO8JDhiyUkuy";
         string accessToken = "1396065818-MeBf8ybIXA3FpmldORfBMdmrVJLVgijAXJv3B18";
-
-
-        public void Send(IMessage message)
+        public void Send(Usuario usuario)
         {
-
             var twitter = new TwitterImage(consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
-            Console.WriteLine(twitter.PublishToTwitter($"{message.Message}" ,$@"{message.Foto}"));
+            Console.WriteLine(twitter.PublishToTwitter($"{usuario.Message}" ,$@"{usuario.Foto}"));
             //var twitterDirectMessage = new TwitterMessage(consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
             //Console.WriteLine(twitterDirectMessage.SendMessage("Hola!", "380889967"));
-        }
-       
-                
-        
+        }   
     }
-    
 }

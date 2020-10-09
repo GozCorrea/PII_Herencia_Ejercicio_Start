@@ -34,14 +34,14 @@ namespace UCURide
                 return this.foto;
             }
         }
-
+        public string Message {get;}
         public Usuario (string nombre, string apellido)
         {
             this.nombre = nombre;
             this.apellido = apellido;
-
         }
-
-
+        public virtual void Mensaje()
+        {
+        }
     }
 }
