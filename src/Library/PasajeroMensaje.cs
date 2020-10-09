@@ -1,5 +1,5 @@
 using System;
-using TwitterUCU;
+//using TwitterUCU;
 
 namespace UCURide
 {
@@ -15,5 +15,5 @@ namespace UCURide
         public string Foto {get; set;}
         public string Message {get; set;}
     }
-    }
+
 }
